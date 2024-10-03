@@ -8,7 +8,7 @@ body {
 }
 
 #content form {
-  max-width: 400px;
+  width: 400px;
   margin: 0 auto;
   padding: 20px;
   background-color: #ffffff;
@@ -36,6 +36,9 @@ body {
   background-color: #f0f0f0;
   color: #333;
   outline: none;
+}
+#content input[type="email"]{
+  width: 90%;
 }
 
 #content input[type="email"]:focus {
@@ -86,11 +89,13 @@ body {
 
 
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 480px) {
   /* styles for mobile browsers smaller than 480px; (iPhone) */
   #content form {
     padding: 20px;
-    max-width: 100px;
+    width: auto;
+    margin: 0;
+    border-radius: 0;
   }
 
   #content h1 {
@@ -100,9 +105,11 @@ body {
   #content input[type="email"], input[type="submit"] {
     font-size: 1.1em;
     padding: 10px;
+    width: 90%;
   }
 
   #content p {
     font-size: 1em;
+    margin: 20px 0;
   }
 }
