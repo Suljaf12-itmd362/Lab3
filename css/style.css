@@ -7,7 +7,7 @@ body {
   padding: 20px;
 }
 
-form {
+#content form {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
@@ -16,13 +16,7 @@ form {
   border-radius: 10px;
 }
 
-h1 {
-  font-size: 1.5em;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-p {
+#content p {
   text-align: center;
   font-size: 1.1em;
   color: #555;
@@ -30,9 +24,9 @@ p {
 }
 
 /* Input Fields */
-input[type="email"],
-input[type="submit"],
-input[type="checkbox"] {
+#content input[type="email"],
+#content input[type="submit"],
+#content input[type="checkbox"] {
   display: block;
   width: 100%;
   font-size: 1em;
@@ -44,49 +38,71 @@ input[type="checkbox"] {
   outline: none;
 }
 
-input[type="email"]:focus {
+#content input[type="email"]:focus {
   background-color: #e0e0e0;
 }
 
-input[type="submit"] {
+#content input[type="submit"] {
   background-color: #555;
   color: #fff;
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
+#content input[type="submit"]:hover {
   background-color: #333;
 }
 
-label {
+#content  label {
   font-size: 1.1em;
   color: #333;
   margin-bottom: 10px;
   display: block;
 }
 
-input[type="checkbox"] {
+#content input[type="checkbox"] {
   display: inline-block;
   width: auto;
   margin-right: 10px;
 }
 
-input[type="checkbox"]+label {
+#content input[type="checkbox"]+label {
   display: inline;
   font-size: 1em;
 }
 
 /* Remove borders on input fields */
-input {
+#content input {
   border: none;
 }
 
-/* Add spacing for white space and padding */
-form {
-  padding: 30px;
-}
-
-ol {
+#content ol {
   padding-left: 0;
   list-style: none;
+}
+
+
+
+/* Mobile styling */
+
+
+
+@media only screen and (max-device-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+  #content form {
+    padding: 20px;
+    max-width: 100px;
+  }
+
+  #content h1 {
+    font-size: 1.3em;
+  }
+
+  #content input[type="email"], input[type="submit"] {
+    font-size: 1.1em;
+    padding: 10px;
+  }
+
+  #content p {
+    font-size: 1em;
+  }
 }
